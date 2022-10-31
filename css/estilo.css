@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#container{
+    margin: 0 auto;
+    width: 400px;
+    height: 800px;
+    background-color: #e6e1e1;
+}
+
+#barra_superior{
+    width: 400px;
+    height: 3px;
+    background-color: #2393F7;
+    margin-bottom: 12px;
+}
+
+#conta_corrente{
+    font-size: 24px;
+    font-family: 'roboto', 'arial', 'sans-serif';
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+#img_opçao{
+    width: 25px;
+    height: 25px;
+    margin-left: 340px;
+    margin-bottom:40px;
+    margin-top: -125px;
+    filter: opacity(60%)
+}
+
+#fundo_form{
+    margin: 0 auto;
+    width: 360px;
+    height: 69px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-top: 10px;
+    margin-bottom:90px;
+    margin-top: -10px;
+}
+
+#label_dinheiro_conta{
+    font-family: roboto;
+    font-weight: bold;
+    color: #374047;
+    font-size: 24px;
+    margin-left: 20px; 
+    padding-top: -20px;   
+}
+
+#img_olhinho{
+    width: 30px;
+    height: 25px;
+    margin-left: 120px;
+    margin-bottom: -10px;
+    filter: opacity(60%)
+}
+#fundo_form2{
+    margin: 20px;
+    width: 360px;
+    height: 120px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom:20px;
+    margin-top: -70px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1)
+}
+
+
+#quadrado{
+    width: 60px;
+    height: 60px;
+    background-color: #2393F7;
+    border-radius: 15px;
+    margin-left: 45px;
+    margin-top: -150px;
+    margin-bottom: 95px;
+}
+
+#p_hum{
+    font-size: 13px;
+    font-family: 'roboto','Sans-serif';
+    font-weight: medium;
+    text-transform: uppercase;
+    color:#808892;
+    padding-left: 50px;
+    margin-top: -90px;
+    margin-bottom: 45px;
+    width:340px;
+    
+}
+
+#img_cartao{
+    width: 30px;
+    height: 25px;
+    margin-left: 60px;
+    margin-bottom: 145px;
+    margin-top: -110px;
+    filter: opacity(60%)
+}
+
+#quadrado1{
+    width: 60px;
+    height: 60px;
+    background-color: #2393F7;
+    border-radius: 15px;
+    margin-left: 130px;
+    margin-top: -192px;
+    margin-bottom: 190px;
+}
+
+#p_dois{
+    font-size: 13px;
+    font-family: 'roboto','Sans-serif';
+    font-weight: medium;
+    text-transform: uppercase;
+    color:#808892;
+    padding-left: 135px;
+    margin-top: -187px;
+    margin-bottom: 70px; 
+}
+
+#img_boleto{
+    width: 30px;
+    height: 25px;
+    margin-left: 145px;
+    margin-bottom: 145px;
+    margin-top: -135px;
+    filter: opacity(60%)
+}
+
+#quadrado2{
+    width: 60px;
+    height: 60px;
+    background-color: #2393F7;
+    border-radius: 15px;
+    margin-left: 210px;
+    margin-top: -192px;
+    margin-bottom: 190px;
+}
+
+#p_treis{
+    font-size: 13px;
+    font-family: 'roboto','Sans-serif';
+    font-weight: medium;
+    text-transform: uppercase;
+    color:#808892;
+    padding-left: 205px;
+    margin-top: -187px;
+    margin-bottom: 70px; 
+}
+
+#img_transferir{
+    width: 30px;
+    height: 25px;
+    margin-left: 225px;
+    margin-bottom: 145px;
+    margin-top: -135px;
+    filter: opacity(60%)
+}
+
+#quadrado3{
+    width: 60px;
+    height: 60px;
+    background-color: #2393F7;
+    border-radius: 15px;
+    margin-left: 295px;
+    margin-top: -192px;
+    margin-bottom: 190px;
+}
+
+#p_quatro{
+    font-size: 13px;
+    font-family: 'roboto','Sans-serif';
+    font-weight: medium;
+    text-transform: uppercase;
+    color:#808892;
+    padding-left: 300px;
+    margin-top: -187px;
+    margin-bottom: 70px; 
+}
+
+#img_gastos{
+    width: 30px;
+    height: 25px;
+    margin-left: 310px;
+    margin-bottom: 145px;
+    margin-top: -135px;
+    filter: opacity(60%)
+}
+
+#p_transacoes{
+    font-size: 13px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: medium;
+    color: #808892;
+    padding-left: 20px;
+    margin-bottom: 155px;
+    margin-top: -60px; 
+}
+
+#fundo_form3{
+    margin: 20px;
+    width: 360px;
+    height: 418px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-top: 10px;
+    margin-bottom: 125px;
+    margin-top: -145px; 
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1)
+}
+
+#img_negativo{
+    width: 12px;
+    height: 12px;
+    margin-left: 40px;
+    margin-bottom: 530px;
+    margin-top: -540px;
+    filter: opacity(60%)
+}
+
+#p_reais_hum{
+    font-size: 16px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: medium;
+    color: #808892;
+    padding-left: 70px;
+    margin-bottom: 520px;
+    margin-top: -550px; 
+}
+
+#p_data_hum{
+    font-size: 16px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: light;
+    color: #808892;
+    padding-left: 300px;
+    margin-bottom: 520px;
+    margin-top: -540px; 
+}
+
+#p_super{
+    font-size: 12px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: medium;
+    color: #808892;
+    padding-left: 70px;
+    margin-bottom: 510px;
+    margin-top: -510px; 
+}
+
+#p_hora{
+    font-size: 12px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: light;
+    color: #808892;
+    padding-left: 310px;
+    margin-bottom: 520px;
+    margin-top: -525px; 
+}
+
+#linha_hum{
+    width: 315px;
+    height: 0.5px;
+    background-color: rgba(232, 232, 232, 0.903);
+    margin-left: 40px;
+    margin-bottom: 520px;
+    margin-top: -525px; 
+}
+
+#img_negativo_hum{
+    width: 12px;
+    height: 12px;
+    margin-left: 40px;
+    margin-bottom: 500px;
+    margin-top: -530px;
+    filter: opacity(60%)
+}
+
+#p_reais_dois{
+    font-size: 16px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: medium;
+    color: #808892;
+    padding-left: 70px;
+    margin-bottom: 420px;
+    margin-top: -530px; 
+}
+
+#p_data_dois{
+    font-size: 16px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: light;
+    color: #808892;
+    padding-left: 300px;
+    margin-bottom: 420px;
+    margin-top: -440px; 
+}
+
+#p_shopping{
+    font-size: 12px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: medium;
+    color: #808892;
+    padding-left: 70px;
+    margin-bottom: 410px;
+    margin-top: -410px; 
+}
+
+#p_hora_hum{
+    font-size: 12px;
+    font-family: 'roboto','arial','sans serif';
+    font-weight: light;
+    color: #808892;
+    padding-left: 310px;
+    margin-bottom: 420px;
+    margin-top: -425px; 
+}
+
+#linha_dois{
+    width: 315px;
+    height: 0.5px;
+    background-color: rgba(232, 232, 232, 0.903);
+    margin-left: 40px;
+    margin-bottom: 420px;
+    margin-top: -425px; 
+}

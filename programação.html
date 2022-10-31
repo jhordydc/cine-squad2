@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../icon/2809591.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <!-- css toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css styles -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <title><CINE-SQUAD></title>
+</head>
+<body>
+
+    <!-- Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg pt-2 pb-2">
+        <div class="container-fluid">
+                <a id="navbar-name" class="navbar-brand" href="./home.html">Cine-Squad</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./snack-bar.html">Snack-Bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Programação</a>
+                    </li>
+                </ul>
+                 <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../index.html">Registrar-se</a></li>
+                        <li><a class="dropdown-item" href="../index.html">Login</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- cs 1 ------------------------------------------------------>
+    <div class="container">
+        <h2 class="text-light pt-4">Cinemas</h2>
+        <h3 class="text-light pt-4">Compre o seu Ingresso agora !</h3>
+        <!-- start Select -------------------------------------------------------------------------------------------->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-lg-3">
+                    <select id="selecionePelicula" name="FilmesASalvar" class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Escolha um Filme...</option>
+                            <option value="homem-aranha">Homem Aranha: Sem volta pra casa</option>
+                            <option value="wolverine">Wolverine-Imortal</option>
+                            <option value="avengers">Avengers:Infinity war</option>
+                            <option value="Aladdin">Aladdin</option>
+                            <option value="harrypotter">Harry Potter e as Reliquias da morte</option>
+                            <option value="thor">Thor: amor e trovão</option>
+                            <option value="caçaimplacavel">Caça Implacável</option>
+                            <option value="minions2">Minions 2: A origem de Gru</option>
+                            <option value="ingressoparaoparaiso">Ingresso para o Paraíso</option>
+                            <option value="atéoultimohomem">Até o último Homem</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-2 col-lg-3">
+                    <select id="selecioneCidade" name="FilmesASalvar" class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Escolha a Cidade...</option>
+                            <option value="saopaulo">São Paulo</option>
+                            <option value="riodejaneiro">Rio de Janeiro</option>
+                        </select>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <select id="selecioneDia" name="FilmesASalvar" class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Selecione um dia...</option>
+                            <option value="segundafeira">Segunda-Feira</option>
+                            <option value="tercafeira">Terça-Feira</option>
+                            <option value="quartafeira">Quarta-Feira</option>
+                            <option value="quintafeira">Quinta-Feira</option>
+                            <option value="sextafeira">Sexta-Feira</option>
+                            <option value="sabado">Sábado</option>
+                            <option value="domingo">Domingo</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-2 col-lg-2">
+                    <select id="selecioneHorario" name="FilmesASalvarr" class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Horario...</option>
+                            <option value="15:30">15:30</option>
+                            <option value="17:30">17:30</option>
+                            <option value="19:30">19:30</option>
+                            <option value="21:00">21:00</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-2 col-lg-2">
+                    <button type="button" class="btn btn-warning" id="btnComprarEntrada">
+                        Comprar Ingresso
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p id="aviso" class="text-danger fw-bold text-center"></p>
+                </div>
+            </div>
+        </div>
+        <!-- end Select -------------------------------------------------------------------------------------------->
+
+        <div class="row pt-5">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Spider-man.jpeg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Homem Aranha: No way home</p>
+
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=JfVOs4VSpmA" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+            
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Aladin.jpeg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Aladdin</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal1" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=PRyOvcOhtms&t=64s" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>    
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Harry Potter.jpeg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Harry Potter:As Reliquias da morte</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=kmXjPbN-rYU" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Thor.jpg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Thor amor e trovão</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=1c_W_4cNLn0" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+          
+        <div class="row pt-5">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/caça implacável.jpg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Caça Implacável</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=QTf6nYnBeOs" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Minions.jpg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Minions 2: A origem de Gru </p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=QTf6nYnBeOs" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Ingresso para o paraíso.jpg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Ingresso para o Paraíso</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=lCOyfItmwlU" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Até o último homem.jpg" alt="portada" width="300px">
+                </a>
+                <p class="text-light text fs-5">Até o último Homem</p>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a href="https://www.youtube.com/watch?v=4s4UCxCv_OE" class="btn btn-danger mb-3 text-capitalize fs-4 active" target="_blank" style="margin-right: 10px;">trailer</a> 
+                </button>
+                <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: black;">
+                    <a  class="btn btn-success mb-3 text-capitalize fs-4 active">ingresso</a> 
+                </button>     
+        </div>     
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid pt-5">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="./home.html" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="./snack-bar.html" class="nav-link px-2 text-muted">Snack-Bar</a></li>
+                    <li class="nav-item"><a href="./programação.html" class="nav-link px-2 text-muted">Programação</a></li>
+                </ul>
+                <p class="text-center text-muted">Copyrigth &copy; 2022 Cine-Squad</p>
+            </footer>
+        </div>
+
+        <div class="b-example-divider"></div>
+    <!-- end Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+     <!-- Modal 1 =====================================================================================-->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Homem-Aranha: No way home</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../images/homem-aranha cartaz.png" alt="" width="1000px">
+                                </div>
+                           
+                            <div class="row pt-4">
+                                <div class="col-9">Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando um feitiço para reverter o evento não sai como o esperado, o Homem-Aranha e seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso.</div>
+                                <div class="col-3  text-center">
+                                    <p> <span class="text-muted">Gênero:</span> Ação/Ficção científica</p>
+                                    <p> <span class="text-muted">Criador:</span>  Jon Watts</p>
+                                    <p> <span class="text-muted">Duração:</span>  2h 28 min</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="container bg-dark bg-opacity-75 p-5">
+                    <div class="row">
+                        <div class="col-sm-12 text-white" style="margin-top: -35px;">
+                            <p class="text-uppercase fs-3">horários e salas</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 text-white" style="margin-top: -20px;">
+                            <p class="text-uppercase fw-light fs-4">hoje</p>
+                        </div>
+                    </div>
+                    
+                    <div class="container bg-white opacity-25" style="height: 2px;"></div>
+                    
+                    <div class="row mt-3">
+                        <div class="col-sm-12 text-capitalize fs-5 text-white">
+                            <p>sala 1</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                            <button type="button" class="btn btn-outline-success" style="width: 150px;">15:30</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-12 text-capitalize fs-5 text-white">
+                            <p>sala 2</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                            <button type="button" class="btn btn-outline-success" style="width: 150px;">17:30</button>
+                        </div>
+                        <div class="col-xl-3 d-block">
+                            <button type="button" class="btn btn-outline-success mb-3" style="width: 150px;">19:30</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-12 text-capitalize fs-5 text-white">
+                            <p>sala 3</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                            <button type="button" class="btn btn-outline-success" style="width: 150px;">19:30</button>
+                        </div>
+                        <div class="col-xl-3 d-block">
+                            <button type="button" class="btn btn-outline-success mb-3" style="width: 150px;">21:00</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" id="btnAddFilmeALista" class="btn btn-info fw-bold">Adicionar na minha lista</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- ============================================================================================ -->
+
+ <!-- Modal 2 =====================================================================================-->
+ <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-light">
+                <h5 class="modal-title" id="exampleModalLabel2">Aladdin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-light">
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img src="../images/aladin-home.jpg" alt="" width="1000px">
+                            </div>
+                       
+                        <div class="row pt-4">
+                            <div class="col-9">Um jovem humilde descobre uma lâmpada mágica com um gênio que pode conceder desejos. Agora, o rapaz quer conquistar a moça por quem se apaixonou, mas o que ele não sabe é que a jovem é uma princesa que já está comprometida. Com a ajuda do gênio, ele tenta se passar por um príncipe para fisgar o amor da moça e a confiança de seu pai.</div>
+                            <div class="col-3  text-center">
+                                <p> <span class="text-muted">Gênero:</span> fantasia/Romance</p>
+                                <p> <span class="text-muted">Criador:</span>  Guy Ritchie</p>
+                                <p> <span class="text-muted">Duração:</span>  2h 8 min</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container bg-dark bg-opacity-75 p-5">
+                <div class="row">
+                    <div class="col-sm-12 text-white" style="margin-top: -35px;">
+                        <p class="text-uppercase fs-3">horários e salas</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-white" style="margin-top: -20px;">
+                        <p class="text-uppercase fw-light fs-4">hoje</p>
+                    </div>
+                </div>
+                
+                <div class="container bg-white opacity-25" style="height: 2px;"></div>
+                
+                <div class="row mt-3">
+                    <div class="col-sm-12 text-capitalize fs-5 text-white">
+                        <p>sala 1</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                        <button type="button" class="btn btn-outline-success" style="width: 150px;">15:30</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-12 text-capitalize fs-5 text-white">
+                        <p>sala 2</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                        <button type="button" class="btn btn-outline-success" style="width: 150px;">17:30</button>
+                    </div>
+                    <div class="col-xl-3 d-block">
+                        <button type="button" class="btn btn-outline-success mb-3" style="width: 150px;">19:30</button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-12 text-capitalize fs-5 text-white">
+                        <p>sala 3</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 d-block mb-3" style="margin-right: -110px;">
+                        <button type="button" class="btn btn-outline-success" style="width: 150px;">19:30</button>
+                    </div>
+                    <div class="col-xl-3 d-block">
+                        <button type="button" class="btn btn-outline-success mb-3" style="width: 150px;">21:00</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <!-- <button type="button" id="btnAddFilmeALista" class="btn btn-info fw-bold">Adicionar na minha lista</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================================================ -->
+
+
+
+
+
+
+
+    <!-- MODAL USUARIO - CONTA ===========================================================================-->
+    <!-- Modal -->
+    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Conta</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p id="usuario" class="text-light fw-bold m-4 fs-4"></p>
+            <button id="btnSairdaCessao" type="button" class="btn btn-secondary m-4">Sair da Sessão</button>
+        </div>
+    </div>
+    <!-- ===========================================================================-->
+
+        <!-- js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- incorporation of sweet alert2 library -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- incorporation of toastify library -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!-- js module-->
+        <script src="../script/home.js" type="module"></script>
+
+</body>
+</html>

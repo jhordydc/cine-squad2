@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Cine-Squad</title>
+</head>
+
+<body>
+
+    <!-- Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg pt-2 pb-2">
+        <div class="container-fluid">
+            <a id="navbar-name" class="navbar-brand" href="../Cine-squad/pages/home.html">Cine-Squad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <!-- end Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <h2 class="text-light pt-4 text-center">Iniciar Sessão</h2>
+        <div class="row pt-5">
+            <div class="col-xs-1 col-md-3"></div>
+
+            <div class="col-xs-10 col-md-6 text-light">
+                <!-- form login -->
+                <form>
+                    <div class="mb-3">
+                        <label for="signInUser" class="form-label">Nome e Sobrenome</label>
+                        <input type="email" name="usuario" class="form-control" id="signInUser"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca divulgaremos as suas informações.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signInPass" class="form-label">Senha</label>
+                        <input type="password" name="password" class="form-control" id="signInPass">
+                    </div>
+                    <p id="alerta1" class="text-danger fw-bold"></p>
+                    <button type="button" id="signInButton" class="btn btn-info">Iniciar Sessão</button>
+                </form>
+                <!-- -------------- -->
+            </div>
+
+            <div class="col-xs-1 col-md-3"></div>
+        </div>
+
+        <div class="row pt-5 pb-5">
+            <h2 class="text-light pt-4 text-center">Cadastre-se</h2>
+            <div class="col-xs-1 col-md-3"></div>
+
+            <div class="col-xs-10 col-md-6 text-light">
+                <!-- form register -->
+                <form>
+                    <div class="mb-3">
+                        <label for="signInUser" class="form-label">Nome e Sobrenome</label>
+                        <input type="email" name="usuario" class="form-control" id="signUpUser"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca divulgaremos as suas informações.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signInPass" class="form-label">Senha</label>
+                        <input type="password" name="password" class="form-control" id="signUpPass">
+                    </div>
+                    <p id="alerta2" class="text-danger fw-bold"></p>
+                    <p id="alerta3" class="text-success fw-bold"></p>
+                    <button type="button" id="signUpButton" class="btn btn-info">Cadastre-se</button>
+                </form>
+                <!-- -------------- -->
+            </div>
+
+            <div class="col-xs-1 col-md-3"></div>
+        </div>
+    </div>
+    <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid pt-5">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/home.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/snack-bar.html" class="nav-link px-2 text-muted">Snack-Bar</a>
+                </li>
+                <li class="nav-item"><a href="/programação.html" class="nav-link px-2 text-muted">Programação</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">Copyrigth &copy; 2022 Cine-Squad</p>
+        </footer>
+    </div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- end Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+
+</body>
+
+</html>

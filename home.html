@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../icon/2809591.ico">
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css styles -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <title><CINE-SQUAD></title>
+</head>
+
+<body>
+    <!-- Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg pt-2 pb-2">
+        <div class="container-fluid">
+                <a id="navbar-name" class="navbar-brand" href="./home.html">Cine-Squad</a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Esta seccion use fetch -->
+                        <a class="nav-link active" aria-current="page" href="./snack-bar.html">Snack-Bar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./programação.html">Programação</a>
+                    </li>
+                </ul>
+               <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Pesquisar..." aria-label="Pesquisar..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../index.html">Registrar-se</a></li>
+                        <li><a class="dropdown-item" href="../index.html">Login</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start Carousel ---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/Infinity-War.jpg" class="d-block w-100" alt="Avengers Infinity-War">
+                <div class="carousel-caption d-none d-md-block">
+                <h2>Avengers Infinity War</h2>
+                <a href="../movies/Avengers Infinity War Official Trailer.mp4">
+                    <button type="button" class="btn btn-outline-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                        Assistir
+                    </button>
+                </a>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    Mais Informações
+                </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/Harley-Quinn.jpg" class="d-block w-100" alt="Aves de Rapina">
+                <div class="carousel-caption d-none d-md-block">
+                <h2>Aves de Rapina</h2>
+                <a href="../movies/Aves de Rapina - Trailer Oficial .mp4">
+                    <button type="button" class="btn btn-outline-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                        Assistir
+                    </button>
+                </a>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                    </svg>
+                    Mais Informações
+                </button>
+                </div>
+            </div>
+                <div class="carousel-item">
+                    <img src="../images/aladin-home.jpg" class="d-block w-100" alt="Aladdin">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Aladdin</h2>
+                        <a href="../movies/Aladdin -Trailer Legendado_.mp4">
+                            <button type="button" class="btn btn-outline-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                </svg>
+                                Assistir
+                            </button>
+                        </a>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                            </svg>
+                            Mais Informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+     
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end Carousel ---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- start Select -------------------------------------------------------------------------------------------->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <select id="FilmesASalvar" name="FilmesASalvar" class="form-select" aria-label="Default select example">
+                    <option selected>Procure por Filme disponível aqui...</option>
+                            <option value="homem-aranha">Homem Aranha: Sem volta pra casa</option>
+                            <option value="wolverine">Wolverine-Imortal</option>
+                            <option value="avengers">Avengers:Infinity war</option>
+                            <option value="Aladdin">Aladdin</option>
+                            <option value="harrypotter">Harry Potter e as Reliquias da morte</option>
+                            <option value="thor">Thor: amor e trovão</option>
+                            <option value="caçaimplacavel">Caça Implacável</option>
+                            <option value="minions2">Minions 2: A origem de Gru</option>
+                            <option value="ingressoparaoparaiso">Ingresso para o Paraíso</option>
+                            <option value="atéoultimohomem">Até o último Homem</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-md-3 col-lg-3">
+                <button type="button" class="btn btn-warning"  id="btnAddfilmeALista">
+                    Procurar 
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end Select -------------------------------------------------------------------------------------------->
+
+    <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+    <!-- cs 4 ------------------------------------------------------>
+    <div class="container-fluid pt-5">
+        <h2 class="populares text-light pt-4">Filmes em Cartaz em São Paulo</h2>
+        <div class="row">
+            <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Avenger-end-game.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Harry Potter.jpeg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Minions.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Thor.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/caça implacável.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Até o último homem.jpg" alt="portada"></a>
+                        
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pt-5">
+        <h2 class="populares text-light pt-4">Filmes em Cartaz em Rio de Janeiro</h2>
+        <a href="../rj/"></a>
+        <div class="row">
+            <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Avenger-end-game.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Spider-man.jpeg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/1080x1620_1591797018.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Até o último homem.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Thor.jpg" alt="portada"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Aladin.jpeg" alt="portada"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Call to Action-->
+    <div class="card text-white bg-secondary my-6 py-0,3 text-center">
+                
+        <img src="../images/email.JPG" class="d-block w-100" alt="Infomini">
+    </div>
+    
+
+    <div id="footer-container">
+        <footer class="container">
+    
+            <ul class="social">
+
+                    <a href="https://pt-br.facebook.com/login/device-based/regular/login/"><img src="../images/facebookIcon.png" width="3%">
+                        <span class="icon icon-facebook"></span>
+                    </a>
+                
+                    <a href="https://www.instagram.com/accounts/login/"><img src="../images/instaIcon.png" width="3%">
+                        <span class="icon icon-instagram"></span>
+                    </a>
+                
+                    <a href="https://www.youtube.com/"><img src="../images/youtube-icon.png" width="3%">
+                        <span class="icon icon-youtube"></span>
+                    </a>
+            </ul>
+
+    
+            <div class="links">
+                <div class="row">
+    
+                    <div class="col-sm-4 col-md-2 hidden-xs">
+                        <strong class="title">Filmes</strong>
+                        <ul>
+                            <li><a class="by-city" href="/sao-paulo/cinemas">Programação</a></li>
+                            <li><a class="by-city" href="/sao-paulo/filmes/em-cartaz">Em cartaz</a></li>
+                            <li><a class="by-city" href="/sao-paulo/filmes/em-breve">Em breve</a></li>
+                            <li><a href="/ingressos">Ingressos</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-sm-4 col-md-2">
+                        <div class="hidden-xs">
+                            <strong class="title">Snack-Bar</strong>
+                            <ul>
+                                <li><a href="/snack-bar/cardapio-snack-bar">Cardápio Snack Bar</a></li>
+                                <li><a href="/snack-bar/cardapio-prime">Cardápio Bradesco Prime</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                        <div class="col-sm-4 col-md-2 hidden-xs">
+                          <strong class="title">Fidelidade</strong>
+                          <ul>
+                              <li><a href="/fidelidade/cinesquad-club">Cine-Squad Club</a></li>
+                              <li><a href="/fidelidade/meu-cinesquad">Meu Cine-Squad</a></li>
+    
+                          </ul>
+                        </div>
+    
+                    <div class="col-sm-4 col-md-2 hidden-xs">
+                        <strong class="title">Salas</strong>
+                        <ul>
+                            <li><a href="/salas/real-d-3d">Real D 3D</a></li>
+                            <li><a href="/salas/xd">XD</a></li>
+                            <li><a href="/salas/d-box">D-Box</a></li>
+                            <li><a href="/salas/prime">Bradesco Prime</a></li>
+                            <li><a href="/salas/movie-bistro">Movie Bistrô</a></li>
+                            <li><a href="/cine-squad-reservas.agendaopen.com/">Aluguel de salas</a></li>
+                        </ul>
+                    </div>
+       
+                    <div class="col-sm-4 col-md-2 hidden-xs">
+                        <strong class="title">Contato</strong>
+                        <ul>
+                            <li><a id="feedback" href="/cinesquadsupport.com/hc/pt-br" target="_blank" accesskey="4">Central de Atendimento</a></li>
+                            
+                            <li><a href="/cinesquad.gupy.io/" class="btn-work" target="_blank" rel="nofollow">Trabalhe conosco <span class="icon icon-external"></span></a></li>                        
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-md-2 hidden-xs">
+                        <strong class="title">Produtos</strong>
+                        <ul>
+                            <li><a href="/ingressoscorporativos.cinesquad.com.br/Information?Type=SuperSaver" class="btn-tickets" target="_blank" rel="nofollow">Ingressos corporativos <span class="icon icon-external"></span></a></li>
+                            <li><a href="/cinesquad-reservas.agendaopen.com/">Aluguel de salas</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+    <!-- start Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="container-fluid pt-10">
+            <footer class="py-3 my-2">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+                </ul> 
+                <p class="text-center text-muted">Copyright &copy; 2022 Cine-Squad</p>
+                
+            </footer>
+        </div>
+        <div class="b-example-divider"></div>
+    <!-- end Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Modal 1 =====================================================================================-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Avengers: Guerra Infinita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../images/Infinity-War.jpg" alt="" width="1000px">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-12">
+                                    <a href="../movies/Avengers Infinity War Official Trailer.mp4">
+                                        <button type="button" class="btn btn-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                            </svg>
+                                            Trailer
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-9">Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</div>
+                                <div class="col-3  text-center">
+                                    <p> <span class="text-muted">Gênero:</span> Ação/Ficção científica</p>
+                                    <p> <span class="text-muted">Criador:</span>  Anthony Russo</p>
+                                    <p> <span class="text-muted">Duração:</span>  2h 29 min</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" id="btnAddFilmeALista" class="btn btn-info fw-bold">Adicionar na minha lista</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================ -->
+
+    <!-- Modal 2 slide =====================================================================================-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Aves de Rapina</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../images/Harley-Quinn.jpg" alt="" width="1000px">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-12">
+                                    <a href="../movies/Aves de Rapina - Trailer Oficial .mp4">
+                                        <button type="button" class="btn btn-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                            </svg>
+                                            Trailer
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-9">Depois de se aventurar com o Coringa, Arlequina se junta a Canário Negro, Caçadora e Renee Montoya para salvar a vida de uma garotinha do criminoso Máscara Negra em Gotham City.</div>
+                                <div class="col-3  text-center">
+                                    <p> <span class="text-muted">Gênero:</span> Ação, Aventura</p>
+                                    <p> <span class="text-muted">Criador:</span>  Cathy Yan</p>
+                                    <p> <span class="text-muted">Duração:</span>  1h 49 min</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" id="btnAddFilmeALista2" class="btnAddFilmeALista btn btn-info fw-bold">Adicionar na minha lista</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================ -->
+
+    <!-- Modal 3 slide =====================================================================================-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Aladdin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../images/aladin-home.jpg" alt="" width="1000px">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-12">
+                                    <a href="../movies/Aladdin -Trailer Legendado_.mp4">
+                                        <button type="button" class="btn btn-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                            </svg>
+                                            Trailer
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-9">Um jovem humilde descobre uma lâmpada mágica com um gênio que pode conceder desejos. Agora, o rapaz quer conquistar a moça por quem se apaixonou, mas o que ele não sabe é que a jovem é uma princesa que já está comprometida. Com a ajuda do gênio, ele tenta se passar por um príncipe para fisgar o amor da moça e a confiança de seu pai.</div>
+                                <div class="col-3  text-center">
+                                    <p> <span class="text-muted">Gênero:</span> fantasia/ romance</p>
+                                    <p> <span class="text-muted">Criador:</span>  Guy Ritchie</p>
+                                    <p> <span class="text-muted">Duração:</span>  2h 8 min</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <!-- <button type="button" id="btnAddFilmeALista3" class="btnAddFilmeALista btn btn-info fw-bold">Adicionar na minha lista</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================ -->
+
+    <!-- MODAL USUARIO - CONTA ===========================================================================-->
+    <!-- Modal -->
+    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel" href="../index.html">Conta</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p id="usuario" class="text-light fw-bold m-4 fs-4"></p>
+            <a href="../index.html">
+                <button type="button" class="btn btn-secondary m-4">Sair</button>
+            </a>
+        </div>
+    </div>
+    <!-- ===========================================================================-->
+
+        <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- incorporation of sweet alert2 library -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- incorporation of toastify library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- js module-->
+    <script src="../script/home.js" type="module"></script>
+</body>
+</html>
